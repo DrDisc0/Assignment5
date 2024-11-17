@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Used Car Sales</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Used Car Sales</h1>
+    <nav>
+      <h2>Find Your Perfect Car</h2>
+    </nav>
+  </header>
+  
+  <section id="filters">
+    <form id="filter-form">
+      <label for="min-year">Min Year:</label>
+      <input type="number" id="min-year" name="min-year" placeholder="e.g., 2015">
+
+      <label for="max-year">Max Year:</label>
+      <input type="number" id="max-year" name="max-year" placeholder="e.g., 2020">
+
+      <label for="make">Make:</label>
+      <select id="make" name="make" multiple>
+        <!-- Makes will be dynamically added -->
+      </select>
+
+      <label for="max-mileage">Max Mileage:</label>
+      <input type="number" id="max-mileage" name="max-mileage" placeholder="e.g., 30000">
+
+      <label for="min-price">Min Price:</label>
+      <input type="number" id="min-price" name="min-price" placeholder="e.g., 10000">
+
+      <label for="max-price">Max Price:</label>
+      <input type="number" id="max-price" name="max-price" placeholder="e.g., 50000">
+
+      <label for="color">Color:</label>
+      <select id="color" name="color" multiple>
+        <!-- Colors will be dynamically added -->
+      </select>
+
+      <button type="button" id="apply-filters">Apply Filters</button>
+      <button id="clear-filters">Clear Filters</button>
+
+    </form>
+  </section>
+
+  <section id="car-list">
+    <!-- Car cards will be dynamically loaded here -->
+  </section>
+
+  <script src="usedCars.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
